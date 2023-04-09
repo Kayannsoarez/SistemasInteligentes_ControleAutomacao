@@ -6,6 +6,7 @@ G
 
 figure()
 stepplot(G);
+
 %% Polos e Zeros
 
 figure;
@@ -15,6 +16,7 @@ set(gca, 'XGrid', 'on','XMinorGrid', 'on', 'XMinorTick', 'on');
 
 subplot(2,1,2);
 pzplot(G(2));
+
 %% Estabilidade
 
 % Return: 1 se o modelo de sistema dinâmico for estável ou 0 se o modelo não for estável.
@@ -26,6 +28,7 @@ sI = s*(eye(4));
 d = (det(sI-A))
 S = simplify(d)
 solve(d, s)
+
 %% Controlabilidade e Observabilidade
 
 Co = ctrb(A,B)
