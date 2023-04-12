@@ -22,6 +22,7 @@ pzplot(G(2));
 % Return: 1 se o modelo de sistema dinâmico for estável ou 0 se o modelo não for estável.
 % Verifica se o sistema é estável em termos da sua resposta ao degrau unitário
 Est = isstable(G)
+
 syms s;
 
 sI = s*(eye(4));
