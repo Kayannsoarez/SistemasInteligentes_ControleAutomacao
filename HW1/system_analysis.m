@@ -34,14 +34,14 @@ solve(d, s)
 
 Co = ctrb(A,B)
 if rank(Co) == length(A)
-    disp('controlável');
+    disp('Controlável');
 else
-    disp('não controlável')
+    disp('Não Controlável')
 end
 
 Ob = obsv(A,C)
 if rank(Ob) == length(A)
-    disp('observável');
+    disp('Observável');
 else
-    disp('não observável')
+    disp('Não Observável')
 end
