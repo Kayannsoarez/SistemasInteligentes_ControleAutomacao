@@ -33,4 +33,15 @@ solve(d, s)
 %% Controlabilidade e Observabilidade
 
 Co = ctrb(A,B)
+if rank(Co) == length(A)
+    disp('controlável');
+else
+    disp('não controlável')
+end
+
 Ob = obsv(A,C)
+if rank(Ob) == length(A)
+    disp('observável');
+else
+    disp('não observável')
+end
